@@ -6,7 +6,8 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: red;
+    cursor: pointer;
 }
 
 header {
@@ -21,9 +22,8 @@ header {
 
 main {
     padding: 50px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     padding: 50px 100px;
 }
 
@@ -65,19 +65,33 @@ form {
 
 .inputContainer:last-child {
     flex-direction: row;
+    align-items: center;
 }
 
-button#clear {
+#clear {
+    width: 100px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    font-size: 15px;
     background-color: #ac0d0d;
+    margin-left: 10px;
 }
 
 section.tableContainer {
     width: 350px;
 }
 
+table {
+    width: 500px;
+}
+
 table, th, td {
     padding: 10px;
     vertical-align: middle;
+    text-align: center;
 }
 
 tr {
